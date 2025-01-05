@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    -runtime-version:
+      nodejs: 20.x
+  build:
+    commands:
+      - echo Build started on `date`
+      - npn install
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  
